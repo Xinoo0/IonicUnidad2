@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Restablecer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup] = 'formularioRecuperar'>
+        <ion-input formControlName="nombre"  label="Ingrese contraseña nueva" label-placement="floating" fill="solid" placeholder=""></ion-input>  
+        <ion-input formControlName="contrasena"  label="Ingrese contraseña nueva" label-placement="floating" fill="solid" placeholder=""></ion-input>  
+        <br />
+        <ion-button  type="submit" [disabled]="!formularioRecuperar.valid" >Iniciar sesión</ion-button> 
+        <ion-button (click)="volveralogin()">Volver </ion-button> 
+      </form>
+    </ion-card-content>
+  </ion-card>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Footer</ion-title>
+    </ion-toolbar>
+  </ion-footer>
